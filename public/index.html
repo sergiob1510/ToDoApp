@@ -21,19 +21,22 @@
 
   </head>
 
-  <body>
+<body>
+
+  <div class="todo-container">
     <h1>To-Do App</h1>
-  <p id="description">Get to work!!</p>
-  <section id="form">
-  <form id="survey-form">
-    <fieldset>
-      <legend>Add new task:</legend><br>
-    <label for="new-task" id="new-task">Task to perform:</label><br><br>
-     <input type="text" id="new-task" name="new-task" placeholder="Describe new task" required><br><br>
-    <label for="deadline" id="deadline">Deadline:</label><br><br>
-    <input type="date" name="deadline" id="deadline" placeholder="When must it be done?" required><br><br>
-    <button type="submit"><i class="fas fa-plus"></i></button>
-    </fieldset>
-  </body>
+    <p id="description">Get to work!!</p>
+    
+    <div class="todo">
+      <form action="/" method="POST" class="todo-header">
+        <input type="text" name="content">
+        <button type="submit"><i class="fas fa-plus"></i></button>
+      </form>
+      
+      <ul class="todo-list">    
+      </ul>
+    </div>
+  </div>
+</body>
 
 </html>
